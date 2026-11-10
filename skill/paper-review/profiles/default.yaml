@@ -1,0 +1,104 @@
+# Generic review profile for any research paper. Copy this file and edit it, or make
+# a small profile that `extends: default.yaml` (see robotics.yaml and template.yaml).
+name: default
+description: General research papers (field-independent)
+
+language:
+  style: ASD-STE100        # style rule for all review text; quotes stay verbatim
+  quotes: verbatim
+
+evidence:
+  max_quote_words: 14
+  must_have: [tag, page, section, quote]
+
+# Tag letter per evidence type. A tag is the letter plus a number, for example W2.
+tag_prefix:
+  claim: C
+  strength: S
+  weakness: W
+  question: Q
+
+colors:
+  claim:    {hex: "#ffd400", name: yellow, use: "claim or method detail"}
+  strength: {hex: "#5fb236", name: green,  use: "strength evidence"}
+  weakness: {hex: "#ff6666", name: red,    use: "weakness or problem"}
+  question: {hex: "#2ea8e5", name: blue,   use: "open question"}
+
+# Fixed sections of the review, in this order. `starts_with` forces the first word.
+sections:
+  - id: summary
+    title: Summary of contribution
+    guidance: >
+      Main points, ideas and claims. How the methods are evaluated and in which
+      settings (data, benchmarks, environments, experiments).
+  - id: strengths
+    title: Strengths
+    guidance: Each strength has at least one green [S#] evidence tag.
+  - id: weaknesses
+    title: Weaknesses
+    guidance: Each weakness has at least one red [W#] evidence tag. Put the most serious first.
+  - id: detailed
+    title: Detailed comments
+    guidance: >
+      Walk through the checks below, one ### sub-heading per check. Add blue [Q#]
+      open questions for the authors. Write "no problem found" only after you looked.
+  - id: award
+    title: Would you nominate this paper for the Best Paper Award? and why?
+    starts_with: ["Yes", "No"]
+    guidance: Start with "Yes" or "No". Then give the reasons, with evidence tags.
+
+# Checks. Do every check. Record findings as evidence, or write "not reported".
+checks:
+  - id: statistics
+    title: Statistics, trials, seeds and variance
+    ask: >
+      How many seeds, runs, trials or participants? Is variance (std, CI) given for
+      every table and figure? Is a claimed gain bigger than the variance? Are
+      significance tests used? Is a small sample used for strong claims?
+  - id: baselines
+    title: Baseline fairness (re-run or copied)
+    ask: >
+      Were baselines re-run with the same data, model size and tuning budget, or are
+      numbers copied from other papers? Do baselines differ in size, data or setup?
+  - id: data_budget
+    title: Data budget
+    ask: >
+      How much training and evaluation data is used? Do all methods use the same
+      data? Are some methods given more data or pre-training?
+  - id: claims_vs_tables
+    title: Claims against tables
+    ask: >
+      Recompute every number in the text from the tables (differences, averages,
+      ranges, percentages). Mark any claim the tables do not support. Check the
+      abstract and the introduction against the results.
+  - id: ablations
+    title: Do the ablations explain the gain?
+    ask: >
+      Remove each proposed part. How much of the total gain does each part explain?
+      Does a variant without the main idea still beat all baselines? Does a part
+      from earlier work cause most of the gain?
+  - id: contradictions
+    title: Main text against appendix contradictions
+    ask: >
+      Compare the method text, the implementation details and the baseline notes.
+      Look for conflicts in architecture, training setup, sizes, epochs, decoding.
+  - id: assumptions
+    title: Assumptions
+    ask: Which assumptions does the method need? Are they tested?
+  - id: reproducibility
+    title: Reproducibility and code
+    ask: >
+      Are code, checkpoints, data and all hyperparameters available? Are compute,
+      seeds and evaluation protocol clear enough to re-run?
+  - id: limitations
+    title: Limitations honesty
+    ask: >
+      Does the limitations section name the real weak points? Or does it only list
+      mild ones?
+
+outputs:
+  evidence_json: true
+  annotations_json: true
+  review_md: true
+  note_html: true
+  review_pdf: true         # the plugin attaches review.pdf when its preference is on

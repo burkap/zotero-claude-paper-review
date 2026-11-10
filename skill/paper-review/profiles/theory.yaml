@@ -1,0 +1,40 @@
+# Example profile: theory-heavy papers (learning theory, optimization, statistics, algorithms).
+extends: default.yaml
+name: theory
+description: Theory papers (theorems, proofs, bounds) with or without small experiments
+
+# Theory papers have no baselines and few ablations: drop the empirical checks.
+remove_checks: [baselines, data_budget, ablations]
+
+checks:
+  - id: statements
+    title: Precise statements
+    ask: >
+      Are the theorems and definitions stated precisely, with all assumptions? Do the
+      informal claims in the abstract and the introduction match the formal statements?
+  - id: proofs
+    title: Proof correctness
+    ask: >
+      Check the main proof steps. Are there gaps, hidden assumptions, circular steps or
+      cases that are skipped ("it is easy to see")? Which lemmas carry the result?
+  - id: assumptions
+    title: Strength of the assumptions
+    ask: >
+      Are the assumptions realistic (bounded, convex, i.i.d., known constants)? Is the
+      result vacuous or trivial under them? Does the paper say where they are needed?
+  - id: tightness
+    title: Tightness and comparison with known results
+    ask: >
+      Are the bounds tight? Is there a lower bound, or a matching special case? How do
+      the results compare with the closest known results, in the same setting and with
+      the same constants?
+  - id: experiments
+    title: Experiments that test the theory
+    ask: >
+      Do the experiments test the assumptions and the predicted rates? Or do they only
+      show that the method works? Are the settings the ones the theory covers?
+  - id: novelty
+    title: Technical novelty
+    ask: >
+      Is the main technique new, or a known technique that is applied to a new setting?
+      What is the hard part of the proof?

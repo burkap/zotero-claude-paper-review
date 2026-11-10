@@ -1,0 +1,91 @@
+<linkset>
+  <html:link rel="localization" href="claude-review.ftl"/>
+</linkset>
+<vbox id="claude-review-prefs">
+  <groupbox>
+    <label><html:h2>Review with Claude</html:h2></label>
+    <description>Runs the claude command on your Mac with your Claude subscription. ANTHROPIC_API_KEY is removed from the environment.</description>
+
+    <label value="Path to the claude binary (empty = search the usual places)"/>
+    <hbox>
+      <html:input id="claude-review-claudePath" preference="extensions.claude-review.claudePath" type="text" style="flex:1" placeholder="/Users/you/.local/bin/claude"/>
+    </hbox>
+
+    <label value="Skill folder (empty = ~/.claude/skills/paper-review)"/>
+    <hbox>
+      <html:input id="claude-review-skillDir" preference="extensions.claude-review.skillDir" type="text" style="flex:1"/>
+    </hbox>
+
+    <label value="Default profile (used by Review with Claude > Default profile)"/>
+    <hbox>
+      <menulist id="claude-review-profilePicker"><menupopup id="claude-review-profilePopup"/></menulist>
+      <button id="claude-review-refresh" label="Refresh list"/>
+    </hbox>
+    <label value="Profile path (set by the picker, or type any YAML path)"/>
+    <hbox>
+      <html:input id="claude-review-profilePath" preference="extensions.claude-review.profilePath" type="text" style="flex:1"/>
+    </hbox>
+
+    <label value="Folder of python3 with PyMuPDF (empty = ~/miniconda3/bin if it exists)"/>
+    <hbox>
+      <html:input id="claude-review-pythonDir" preference="extensions.claude-review.pythonDir" type="text" style="flex:1" placeholder="/Users/you/miniconda3/bin"/>
+    </hbox>
+
+    <label value="Extra PATH folders, separated by colon (optional)"/>
+    <hbox>
+      <html:input id="claude-review-extraPath" preference="extensions.claude-review.extraPath" type="text" style="flex:1"/>
+    </hbox>
+
+    <label value="Claude model"/>
+    <hbox>
+      <menulist id="claude-review-model" preference="extensions.claude-review.model">
+        <menupopup>
+          <menuitem label="Default (Claude Code chooses; Sonnet 5.5 on this Mac)" value="default"/>
+          <menuitem label="Sonnet (latest alias)" value="sonnet"/>
+          <menuitem label="Opus (latest alias, deeper, uses more of your limit)" value="opus"/>
+          <menuitem label="Haiku (latest alias, fastest, weaker reviews)" value="haiku"/>
+          <menuitem label="Fable (latest alias)" value="fable"/>
+          <menuitem label="Claude Sonnet 5.5" value="claude-sonnet-5-5"/>
+          <menuitem label="Claude Opus 5.5" value="claude-opus-5-5"/>
+          <menuitem label="Claude Haiku 5.5" value="claude-haiku-5-5"/>
+          <menuitem label="Claude Fable 5.1" value="claude-fable-5-1"/>
+        </menupopup>
+      </menulist>
+    </hbox>
+    <label value="Other model name (optional, overrides the list)"/>
+    <hbox>
+      <html:input id="claude-review-modelCustom" preference="extensions.claude-review.modelCustom" type="text" style="flex:1" placeholder="for example claude-opus-5-5"/>
+    </hbox>
+
+    <hbox align="center">
+      <label value="Timeout (seconds)"/>
+      <html:input id="claude-review-timeoutSec" preference="extensions.claude-review.timeoutSec" type="number" min="60" max="7200" style="width:80px"/>
+      <label value="Max turns"/>
+      <html:input id="claude-review-maxTurns" preference="extensions.claude-review.maxTurns" type="number" min="10" max="300" style="width:70px"/>
+    </hbox>
+    <checkbox id="claude-review-liveLog" preference="extensions.claude-review.liveLog" label="Show a live progress window with Claude's actions"/>
+    <checkbox id="claude-review-attachPdf" preference="extensions.claude-review.attachPdf" label="Also attach the review as a PDF"/>
+  </groupbox>
+
+  <groupbox id="claude-review-profile-editor">
+    <label><html:h2>Profiles</html:h2></label>
+    <description>A profile sets the review sections, the writing style and the checks Claude does on every paper. A profile can extend another one (extends: robotics.yaml): it then changes only what it lists. Checks merge by id; a list such as sections replaces the parent list. Tab inserts two spaces; Cmd+S saves.</description>
+    <html:div style="display:flex;gap:6px;align-items:center;flex-wrap:wrap;margin:6px 0">
+      <html:label for="cr-edit-picker">Edit profile</html:label>
+      <html:select id="cr-edit-picker" style="min-width:180px"></html:select>
+      <html:button id="cr-new">New…</html:button>
+      <html:button id="cr-dup">Duplicate…</html:button>
+      <html:button id="cr-del">Delete</html:button>
+      <html:button id="cr-default">Use as default</html:button>
+    </html:div>
+    <html:textarea id="cr-yaml" spellcheck="false" style="font-family:Menlo,monospace;font-size:12px;width:100%;min-height:340px;box-sizing:border-box;white-space:pre;tab-size:2"></html:textarea>
+    <html:div style="display:flex;gap:6px;align-items:center;margin:6px 0">
+      <html:button id="cr-insert-check">Insert check</html:button>
+      <html:button id="cr-insert-style">Insert style</html:button>
+      <html:span id="cr-status" style="flex:1;margin-left:8px"></html:span>
+      <html:button id="cr-check">Check</html:button>
+      <html:button id="cr-save">Save</html:button>
+    </html:div>
+    <html:pre id="cr-info" style="font-family:Menlo,monospace;font-size:11.5px;white-space:pre-wrap;margin:0;padding:6px;border:1px solid #8884;border-radius:4px;min-height:24px;user-select:text"></html:pre>
+  </groupbox>
+</vbox>

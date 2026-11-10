@@ -1,0 +1,1072 @@
+{
+  "annotations": [
+    {
+      "tag": "C1",
+      "evidenceType": "claim",
+      "section": "Abstract",
+      "pageNumber": 1,
+      "ambiguous": false,
+      "annotationType": "highlight",
+      "annotationText": "with around 12% improvement over the baselines.",
+      "annotationComment": "[C1] The paper claims a gain of about 12% over the baselines.",
+      "annotationColor": "#ffd400",
+      "annotationPageLabel": "1",
+      "annotationSortIndex": "00000|000206|00537",
+      "annotationPosition": {
+        "pageIndex": 0,
+        "rects": [
+          [
+            75.007,
+            244.417,
+            271.26,
+            254.28
+          ]
+        ]
+      }
+    },
+    {
+      "tag": "C2",
+      "evidenceType": "claim",
+      "section": "3.2.1 Overview",
+      "pageNumber": 4,
+      "ambiguous": false,
+      "annotationType": "highlight",
+      "annotationText": "then fixing RaRSQ to train CST for skill composition.",
+      "annotationComment": "[C2] The method trains RaRSQ first and then trains CST on fixed codes.",
+      "annotationColor": "#ffd400",
+      "annotationPageLabel": "4",
+      "annotationSortIndex": "00003|000168|00483",
+      "annotationPosition": {
+        "pageIndex": 3,
+        "rects": [
+          [
+            79.375,
+            298.49,
+            291.182,
+            308.357
+          ]
+        ]
+      }
+    },
+    {
+      "tag": "C3",
+      "evidenceType": "claim",
+      "section": "4.2 Overall Performance",
+      "pageNumber": 6,
+      "ambiguous": false,
+      "annotationType": "highlight",
+      "annotationText": "STAR achieves 92.7% average success rate across all 50 tasks,",
+      "annotationComment": "[C3] The paper claims 92.7% on MetaWorld MT50.",
+      "annotationColor": "#ffd400",
+      "annotationPageLabel": "6",
+      "annotationSortIndex": "00005|000514|00556",
+      "annotationPosition": {
+        "pageIndex": 5,
+        "rects": [
+          [
+            384.595,
+            225.896,
+            541.443,
+            235.933
+          ],
+          [
+            307.44,
+            213.935,
+            405.4,
+            223.997
+          ]
+        ]
+      }
+    },
+    {
+      "tag": "S1",
+      "evidenceType": "strength",
+      "section": "4.3 Analysis of Learned Skill Diversity",
+      "pageNumber": 7,
+      "ambiguous": false,
+      "annotationType": "highlight",
+      "annotationText": "utilizing only 43.8% of its codebook capacity (7 out of 16 codes).",
+      "annotationComment": "[S1] The paper measures codebook use and shows collapse for naive VQ-VAE.",
+      "annotationColor": "#5fb236",
+      "annotationPageLabel": "7",
+      "annotationSortIndex": "00006|000225|00460",
+      "annotationPosition": {
+        "pageIndex": 6,
+        "rects": [
+          [
+            81.037,
+            321.549,
+            289.443,
+            331.541
+          ],
+          [
+            55.44,
+            309.596,
+            107.353,
+            319.579
+          ]
+        ]
+      }
+    },
+    {
+      "tag": "S2",
+      "evidenceType": "strength",
+      "section": "Appendix A.1.1 LIBERO Benchmark",
+      "pageNumber": 12,
+      "ambiguous": false,
+      "annotationType": "highlight",
+      "annotationText": "we utilize 50 expert demonstrations per task from the author-provided dataset.",
+      "annotationComment": "[S2] The paper states the LIBERO demonstration count.",
+      "annotationColor": "#5fb236",
+      "annotationPageLabel": "12",
+      "annotationSortIndex": "00011|000222|00695",
+      "annotationPosition": {
+        "pageIndex": 11,
+        "rects": [
+          [
+            140.728,
+            86.489,
+            451.378,
+            96.442
+          ]
+        ]
+      }
+    },
+    {
+      "tag": "S3",
+      "evidenceType": "strength",
+      "section": "Appendix A.3.2 Real-World Tasks",
+      "pageNumber": 14,
+      "ambiguous": false,
+      "annotationType": "highlight",
+      "annotationText": "A trial was considered successful only if all stages of the task",
+      "annotationComment": "[S3] The real-world success rule is strict and clear.",
+      "annotationColor": "#5fb236",
+      "annotationPageLabel": "14",
+      "annotationSortIndex": "00013|000031|00106",
+      "annotationPosition": {
+        "pageIndex": 13,
+        "rects": [
+          [
+            55.082,
+            675.502,
+            307.563,
+            685.564
+          ]
+        ]
+      }
+    },
+    {
+      "tag": "S4",
+      "evidenceType": "strength",
+      "section": "Appendix B.1 Ablation Study on Action Refinement",
+      "pageNumber": 15,
+      "ambiguous": false,
+      "annotationType": "highlight",
+      "annotationText": "Overall, the ablation results demonstrate that action refinement is an essential component",
+      "annotationComment": "[S4] The paper reports an extra ablation for action refinement.",
+      "annotationColor": "#5fb236",
+      "annotationPageLabel": "15",
+      "annotationSortIndex": "00014|000535|00683",
+      "annotationPosition": {
+        "pageIndex": 14,
+        "rects": [
+          [
+            55.44,
+            98.457,
+            406.748,
+            108.36
+          ]
+        ]
+      }
+    },
+    {
+      "tag": "S5",
+      "evidenceType": "strength",
+      "section": "4.4 Ablation Study",
+      "pageNumber": 7,
+      "ambiguous": false,
+      "annotationType": "highlight",
+      "annotationText": "we conduct ablation studies by removing critical modules.",
+      "annotationComment": "[S5] Table 2 ablates each part on all five LIBERO suites with std.",
+      "annotationColor": "#5fb236",
+      "annotationPageLabel": "7",
+      "annotationSortIndex": "00006|000339|00659",
+      "annotationPosition": {
+        "pageIndex": 6,
+        "rects": [
+          [
+            86.495,
+            122.329,
+            289.437,
+            132.391
+          ],
+          [
+            55.44,
+            110.422,
+            90.969,
+            120.285
+          ]
+        ]
+      }
+    },
+    {
+      "tag": "S6",
+      "evidenceType": "strength",
+      "section": "4.4 Ablation Study",
+      "pageNumber": 7,
+      "ambiguous": false,
+      "annotationType": "highlight",
+      "annotationText": "removing the autoregressive prediction (w/o AR) significantly impacts the ability",
+      "annotationComment": "[S6] Removing AR lowers the overall score by 4.1 points.",
+      "annotationColor": "#5fb236",
+      "annotationPageLabel": "7",
+      "annotationSortIndex": "00006|000409|00209",
+      "annotationPosition": {
+        "pageIndex": 6,
+        "rects": [
+          [
+            428.7,
+            572.423,
+            541.44,
+            582.41
+          ],
+          [
+            307.44,
+            560.477,
+            513.296,
+            570.598
+          ]
+        ]
+      }
+    },
+    {
+      "tag": "S7",
+      "evidenceType": "strength",
+      "section": "Appendix A.4 Implementation Details",
+      "pageNumber": 14,
+      "ambiguous": false,
+      "annotationType": "highlight",
+      "annotationText": "we provide comprehensive implementation details of our framework,",
+      "annotationComment": "[S7] The appendix lists many hyperparameters and the compute used.",
+      "annotationColor": "#5fb236",
+      "annotationPageLabel": "14",
+      "annotationSortIndex": "00013|000074|00174",
+      "annotationPosition": {
+        "pageIndex": 13,
+        "rects": [
+          [
+            55.082,
+            607.838,
+            328.59,
+            617.766
+          ]
+        ]
+      }
+    },
+    {
+      "tag": "W1",
+      "evidenceType": "weakness",
+      "section": "4.4 Ablation Study",
+      "pageNumber": 7,
+      "ambiguous": false,
+      "annotationType": "highlight",
+      "annotationText": "we observe the most severe performance degradation (87.8% overall).",
+      "annotationComment": "[W1] The variant without both ideas still beats QueST (81.5) by 6.3 points.",
+      "annotationColor": "#ff6666",
+      "annotationPageLabel": "7",
+      "annotationSortIndex": "00006|000560|00454",
+      "annotationPosition": {
+        "pageIndex": 6,
+        "rects": [
+          [
+            327.542,
+            327.331,
+            541.443,
+            337.363
+          ],
+          [
+            307.112,
+            315.368,
+            373.083,
+            325.43
+          ]
+        ]
+      }
+    },
+    {
+      "tag": "W2",
+      "evidenceType": "weakness",
+      "section": "4.4 Ablation Study",
+      "pageNumber": 7,
+      "ambiguous": false,
+      "annotationType": "highlight",
+      "annotationText": "leads to degraded performance (91.0% overall),",
+      "annotationComment": "[W2] Rotation explains only 2.6 of the 12.1 points over QueST.",
+      "annotationColor": "#ff6666",
+      "annotationPageLabel": "7",
+      "annotationSortIndex": "00006|000489|00341",
+      "annotationPosition": {
+        "pageIndex": 6,
+        "rects": [
+          [
+            348.266,
+            440.898,
+            542.683,
+            450.96
+          ]
+        ]
+      }
+    },
+    {
+      "tag": "W3",
+      "evidenceType": "weakness",
+      "section": "Appendix B.1 Ablation Study on Action Refinement",
+      "pageNumber": 15,
+      "ambiguous": false,
+      "annotationType": "highlight",
+      "annotationText": "contributing to a 34.6% improvement in average performance across all tasks.",
+      "annotationComment": "[W3] The offset head, taken from BeT, explains most of the gain.",
+      "annotationColor": "#ff6666",
+      "annotationPageLabel": "15",
+      "annotationSortIndex": "00014|000550|00683",
+      "annotationPosition": {
+        "pageIndex": 14,
+        "rects": [
+          [
+            483.357,
+            98.457,
+            541.44,
+            108.36
+          ],
+          [
+            55.44,
+            86.495,
+            302.722,
+            96.423
+          ]
+        ]
+      }
+    },
+    {
+      "tag": "W4",
+      "evidenceType": "weakness",
+      "section": "3.2.3 Causal Skill Transformer",
+      "pageNumber": 5,
+      "ambiguous": false,
+      "annotationType": "highlight",
+      "annotationText": "Rd is the corresponding rotation matrix.",
+      "annotationComment": "[W4] Rd needs the encoder residual, which is not available at inference; Eq. 22 omits Rd.",
+      "annotationColor": "#ff6666",
+      "annotationPageLabel": "5",
+      "annotationSortIndex": "00004|000544|00408",
+      "annotationPosition": {
+        "pageIndex": 4,
+        "rects": [
+          [
+            503.106,
+            373.081,
+            541.437,
+            383.885
+          ],
+          [
+            307.44,
+            361.737,
+            428.914,
+            371.7
+          ]
+        ]
+      }
+    },
+    {
+      "tag": "W5",
+      "evidenceType": "weakness",
+      "section": "4.2 Overall Performance",
+      "pageNumber": 6,
+      "ambiguous": false,
+      "annotationType": "highlight",
+      "annotationText": "This larger gap on complex tasks stems from the codebook",
+      "annotationComment": "[W5] The paper never measures collapse in VQ-BeT or QueST.",
+      "annotationColor": "#ff6666",
+      "annotationPageLabel": "6",
+      "annotationSortIndex": "00005|000392|00707",
+      "annotationPosition": {
+        "pageIndex": 5,
+        "rects": [
+          [
+            55.131,
+            74.532,
+            289.69,
+            84.495
+          ]
+        ]
+      }
+    },
+    {
+      "tag": "W6",
+      "evidenceType": "weakness",
+      "section": "4.2 Overall Performance (Table 1)",
+      "pageNumber": 6,
+      "ambiguous": false,
+      "annotationType": "highlight",
+      "annotationText": "are cited from their original papers.",
+      "annotationComment": "[W6] Octo and OpenVLA numbers are copied and have no LIBERO-90 result.",
+      "annotationColor": "#ff6666",
+      "annotationPageLabel": "6",
+      "annotationSortIndex": "00005|000132|00185",
+      "annotationPosition": {
+        "pageIndex": 5,
+        "rects": [
+          [
+            320.346,
+            597.244,
+            448.154,
+            606.242
+          ]
+        ]
+      }
+    },
+    {
+      "tag": "W7",
+      "evidenceType": "weakness",
+      "section": "4.2 Overall Performance",
+      "pageNumber": 6,
+      "ambiguous": false,
+      "annotationType": "highlight",
+      "annotationText": "despite their access to significantly more training data.",
+      "annotationComment": "[W7] The paper gives no data count or protocol to support this comparison.",
+      "annotationColor": "#ff6666",
+      "annotationPageLabel": "6",
+      "annotationSortIndex": "00005|000471|00478",
+      "annotationPosition": {
+        "pageIndex": 5,
+        "rects": [
+          [
+            448.578,
+            303.599,
+            541.437,
+            313.661
+          ],
+          [
+            307.44,
+            291.668,
+            434.732,
+            301.631
+          ]
+        ]
+      }
+    },
+    {
+      "tag": "W8",
+      "evidenceType": "weakness",
+      "section": "4.5 STAR on Real-World Robots",
+      "pageNumber": 8,
+      "ambiguous": false,
+      "annotationType": "highlight",
+      "annotationText": "significantly outperforming VQ-BeT and QueST.",
+      "annotationComment": "[W8] The claim uses 6 of 10 trials against 3 and 4 of 10.",
+      "annotationColor": "#ff6666",
+      "annotationPageLabel": "8",
+      "annotationSortIndex": "00007|000335|00509",
+      "annotationPosition": {
+        "pageIndex": 7,
+        "rects": [
+          [
+            428.976,
+            272.344,
+            541.437,
+            282.406
+          ],
+          [
+            307.082,
+            260.407,
+            391.667,
+            270.394
+          ]
+        ]
+      }
+    },
+    {
+      "tag": "W9",
+      "evidenceType": "weakness",
+      "section": "Appendix A.3.2 Real-World Tasks",
+      "pageNumber": 13,
+      "ambiguous": false,
+      "annotationType": "highlight",
+      "annotationText": "we conducted 10 trials per task and reported both the overall success rate",
+      "annotationComment": "[W9] Ten trials give no variance and no significance test.",
+      "annotationColor": "#ff6666",
+      "annotationPageLabel": "13",
+      "annotationSortIndex": "00012|000407|00656",
+      "annotationPosition": {
+        "pageIndex": 12,
+        "rects": [
+          [
+            159.335,
+            125.481,
+            462.25,
+            135.543
+          ]
+        ]
+      }
+    },
+    {
+      "tag": "W10",
+      "evidenceType": "weakness",
+      "section": "Appendix A.4 Implementation Details",
+      "pageNumber": 14,
+      "ambiguous": false,
+      "annotationType": "highlight",
+      "annotationText": "we utilize a ResNet-18 model trained from scratch as the visual encoder",
+      "annotationComment": "[W10] The visual encoder is trained from scratch.",
+      "annotationColor": "#ff6666",
+      "annotationPageLabel": "14",
+      "annotationSortIndex": "00013|000196|00269",
+      "annotationPosition": {
+        "pageIndex": 13,
+        "rects": [
+          [
+            231.382,
+            512.164,
+            524.206,
+            522.226
+          ]
+        ]
+      }
+    },
+    {
+      "tag": "W11",
+      "evidenceType": "weakness",
+      "section": "Appendix A.4 Implementation Details",
+      "pageNumber": 14,
+      "ambiguous": false,
+      "annotationType": "highlight",
+      "annotationText": "the visual and language encoders are frozen,",
+      "annotationComment": "[W11] The same paragraph says these encoders are frozen; this conflicts with training from scratch.",
+      "annotationColor": "#ff6666",
+      "annotationPageLabel": "14",
+      "annotationSortIndex": "00013|000278|00317",
+      "annotationPosition": {
+        "pageIndex": 13,
+        "rects": [
+          [
+            307.728,
+            464.344,
+            488.437,
+            474.406
+          ]
+        ]
+      }
+    },
+    {
+      "tag": "W12",
+      "evidenceType": "weakness",
+      "section": "Appendix A.4 Implementation Details",
+      "pageNumber": 14,
+      "ambiguous": false,
+      "annotationType": "highlight",
+      "annotationText": "the beam size to 5, and the temperature to 1.0 for sampling.",
+      "annotationComment": "[W12] The appendix names beam size, but Section 3.2.4 names nucleus sampling.",
+      "annotationColor": "#ff6666",
+      "annotationPageLabel": "14",
+      "annotationSortIndex": "00013|000256|00305",
+      "annotationPosition": {
+        "pageIndex": 13,
+        "rects": [
+          [
+            286.977,
+            476.328,
+            522.92,
+            486.27
+          ]
+        ]
+      }
+    },
+    {
+      "tag": "W13",
+      "evidenceType": "weakness",
+      "section": "Appendix A.5.2 Baseline Implementation",
+      "pageNumber": 15,
+      "ambiguous": false,
+      "annotationType": "highlight",
+      "annotationText": "The continuous action space is discretized into 256 bins per dimension,",
+      "annotationComment": "[W13] This ACT description conflicts with the CVAE description in A.5.1.",
+      "annotationColor": "#ff6666",
+      "annotationPageLabel": "15",
+      "annotationSortIndex": "00014|000035|00081",
+      "annotationPosition": {
+        "pageIndex": 14,
+        "rects": [
+          [
+            320.755,
+            700.625,
+            541.435,
+            710.542
+          ],
+          [
+            55.44,
+            688.659,
+            114.658,
+            698.622
+          ]
+        ]
+      }
+    },
+    {
+      "tag": "W14",
+      "evidenceType": "weakness",
+      "section": "Appendix A.5.1 Baseline Description",
+      "pageNumber": 14,
+      "ambiguous": false,
+      "annotationType": "highlight",
+      "annotationText": "ACT (Zhao et al., 2023) proposes a transformer-based CVAE",
+      "annotationComment": "[W14] A.5.1 describes ACT as a CVAE with action chunks.",
+      "annotationColor": "#ff6666",
+      "annotationPageLabel": "14",
+      "annotationSortIndex": "00013|000534|00555",
+      "annotationPosition": {
+        "pageIndex": 13,
+        "rects": [
+          [
+            145.301,
+            226.195,
+            396.381,
+            236.349
+          ]
+        ]
+      }
+    },
+    {
+      "tag": "W15",
+      "evidenceType": "weakness",
+      "section": "Appendix A.5.2 Baseline Implementation",
+      "pageNumber": 15,
+      "ambiguous": false,
+      "annotationType": "highlight",
+      "annotationText": "a residual vector quantization module with approximately 1024 codes.",
+      "annotationComment": "[W15] VQ-BeT uses 1024 codes and window 5; STAR uses 16 codes and 8 steps.",
+      "annotationColor": "#ff6666",
+      "annotationPageLabel": "15",
+      "annotationSortIndex": "00014|000122|00167",
+      "annotationPosition": {
+        "pageIndex": 14,
+        "rects": [
+          [
+            394.619,
+            614.779,
+            541.44,
+            624.642
+          ],
+          [
+            55.082,
+            602.824,
+            180.063,
+            612.687
+          ]
+        ]
+      }
+    },
+    {
+      "tag": "W16",
+      "evidenceType": "weakness",
+      "section": "4.2 Overall Performance",
+      "pageNumber": 6,
+      "ambiguous": false,
+      "annotationType": "highlight",
+      "annotationText": "our method achieves 7.2%-12.6% higher success rates.",
+      "annotationComment": "[W16] Against the best baseline the gain is 6.8 on Spatial and 8.0 on Object; the ranges do not match Table 1.",
+      "annotationColor": "#ff6666",
+      "annotationPageLabel": "6",
+      "annotationSortIndex": "00005|000370|00653",
+      "annotationPosition": {
+        "pageIndex": 5,
+        "rects": [
+          [
+            127.083,
+            128.33,
+            289.606,
+            138.297
+          ],
+          [
+            55.44,
+            116.351,
+            111.086,
+            126.413
+          ]
+        ]
+      }
+    },
+    {
+      "tag": "W17",
+      "evidenceType": "weakness",
+      "section": "4.4 Ablation Study",
+      "pageNumber": 7,
+      "ambiguous": false,
+      "annotationType": "highlight",
+      "annotationText": "This synergistic effect demonstrates how our two-stage approach",
+      "annotationComment": "[W17] Drops of 4.1 and 2.6 sum to 6.7, more than the joint drop of 5.8; the effect is sub-additive.",
+      "annotationColor": "#ff6666",
+      "annotationPageLabel": "7",
+      "annotationSortIndex": "00006|000569|00466",
+      "annotationPosition": {
+        "pageIndex": 6,
+        "rects": [
+          [
+            376.172,
+            315.368,
+            541.8,
+            325.43
+          ],
+          [
+            307.44,
+            303.461,
+            398.63,
+            313.324
+          ]
+        ]
+      }
+    },
+    {
+      "tag": "W18",
+      "evidenceType": "weakness",
+      "section": "4.3 Analysis of Learned Skill Diversity",
+      "pageNumber": 7,
+      "ambiguous": false,
+      "annotationType": "highlight",
+      "annotationText": "The mean utilization frequency per code is 6.25%,",
+      "annotationComment": "[W18] The mean equals 100/16 for any full codebook; it proves no balance.",
+      "annotationColor": "#ff6666",
+      "annotationPageLabel": "7",
+      "annotationSortIndex": "00006|000267|00520",
+      "annotationPosition": {
+        "pageIndex": 6,
+        "rects": [
+          [
+            206.971,
+            261.78,
+            289.441,
+            271.743
+          ],
+          [
+            55.44,
+            249.801,
+            175.167,
+            259.863
+          ]
+        ]
+      }
+    },
+    {
+      "tag": "W19",
+      "evidenceType": "weakness",
+      "section": "Appendix A.1.2 MetaWorld MT50",
+      "pageNumber": 13,
+      "ambiguous": false,
+      "annotationType": "highlight",
+      "annotationText": "we collect 100 demonstrations per task using the scripted policies",
+      "annotationComment": "[W19] MetaWorld uses 100 scripted demos; the main text does not say this.",
+      "annotationColor": "#ff6666",
+      "annotationPageLabel": "13",
+      "annotationSortIndex": "00012|000106|00153",
+      "annotationPosition": {
+        "pageIndex": 12,
+        "rects": [
+          [
+            106.743,
+            628.186,
+            363.956,
+            638.058
+          ]
+        ]
+      }
+    },
+    {
+      "tag": "W20",
+      "evidenceType": "weakness",
+      "section": "3.2.2 Theoretical Benefits",
+      "pageNumber": 5,
+      "ambiguous": false,
+      "annotationType": "highlight",
+      "annotationText": "Our formulation offers three key advantages:",
+      "annotationComment": "[W20] The section gives claims without proof or test.",
+      "annotationColor": "#ff6666",
+      "annotationPageLabel": "5",
+      "annotationSortIndex": "00004|000012|00069",
+      "annotationPosition": {
+        "pageIndex": 4,
+        "rects": [
+          [
+            152.513,
+            712.546,
+            289.79,
+            722.608
+          ],
+          [
+            55.44,
+            700.614,
+            102.224,
+            710.577
+          ]
+        ]
+      }
+    },
+    {
+      "tag": "W21",
+      "evidenceType": "weakness",
+      "section": "Limitations",
+      "pageNumber": 9,
+      "ambiguous": false,
+      "annotationType": "highlight",
+      "annotationText": "which must be manually tuned for different task domains.",
+      "annotationComment": "[W21] The limitations are mild and omit small real-world trials and code.",
+      "annotationColor": "#ff6666",
+      "annotationPageLabel": "9",
+      "annotationSortIndex": "00008|000042|00123",
+      "annotationPosition": {
+        "pageIndex": 8,
+        "rects": [
+          [
+            244.429,
+            658.795,
+            289.438,
+            668.658
+          ],
+          [
+            55.44,
+            646.792,
+            242.083,
+            656.854
+          ]
+        ]
+      }
+    },
+    {
+      "tag": "W22",
+      "evidenceType": "weakness",
+      "section": "Appendix A.2 Real-World Setup",
+      "pageNumber": 13,
+      "ambiguous": false,
+      "annotationType": "highlight",
+      "annotationText": "we utilized a single arm to perform two challenging sequential manipulation tasks",
+      "annotationComment": "[W22] Cameras, resets and object placement are not described.",
+      "annotationColor": "#ff6666",
+      "annotationPageLabel": "13",
+      "annotationSortIndex": "00012|000167|00221",
+      "annotationPosition": {
+        "pageIndex": 12,
+        "rects": [
+          [
+            337.094,
+            560.48,
+            541.435,
+            570.393
+          ],
+          [
+            55.44,
+            548.489,
+            176.955,
+            558.551
+          ]
+        ]
+      }
+    },
+    {
+      "tag": "W23",
+      "evidenceType": "weakness",
+      "section": "4.5 STAR on Real-World Robots",
+      "pageNumber": 8,
+      "ambiguous": false,
+      "annotationType": "highlight",
+      "annotationText": "These tasks mirror the complexity of LIBERO-Long tasks",
+      "annotationComment": "[W23] The paper gives no evidence for this claim.",
+      "annotationColor": "#ff6666",
+      "annotationPageLabel": "8",
+      "annotationSortIndex": "00007|000188|00593",
+      "annotationPosition": {
+        "pageIndex": 7,
+        "rects": [
+          [
+            242.969,
+            188.099,
+            289.442,
+            198.091
+          ],
+          [
+            55.44,
+            176.132,
+            241.118,
+            186.174
+          ]
+        ]
+      }
+    },
+    {
+      "tag": "W24",
+      "evidenceType": "weakness",
+      "section": "4.2 Overall Performance (Figure 3)",
+      "pageNumber": 6,
+      "ambiguous": false,
+      "annotationType": "highlight",
+      "annotationText": "STAR achieves consistently superior performance (92.7%) compared to baseline methods",
+      "annotationComment": "[W24] Figure 3 shows no std, and gains of 2.1 points have no variance check.",
+      "annotationColor": "#ff6666",
+      "annotationPageLabel": "6",
+      "annotationSortIndex": "00005|000437|00415",
+      "annotationPosition": {
+        "pageIndex": 5,
+        "rects": [
+          [
+            330.957,
+            367.506,
+            542.039,
+            376.486
+          ],
+          [
+            307.44,
+            356.551,
+            416.265,
+            365.517
+          ]
+        ]
+      }
+    },
+    {
+      "tag": "Q1",
+      "evidenceType": "question",
+      "section": "Appendix A.3.1 Simulated Benchmarks",
+      "pageNumber": 13,
+      "ambiguous": false,
+      "annotationType": "highlight",
+      "annotationText": "calculated over 50 episodes per task with three random seeds.",
+      "annotationComment": "[Q1] Do the seeds mean separate training runs or only evaluation seeds?",
+      "annotationColor": "#2ea8e5",
+      "annotationPageLabel": "13",
+      "annotationSortIndex": "00012|000373|00602",
+      "annotationPosition": {
+        "pageIndex": 12,
+        "rects": [
+          [
+            55.44,
+            179.781,
+            313.256,
+            189.843
+          ]
+        ]
+      }
+    },
+    {
+      "tag": "Q2",
+      "evidenceType": "question",
+      "section": "3.2.4 Inference Process",
+      "pageNumber": 5,
+      "ambiguous": false,
+      "annotationType": "highlight",
+      "annotationText": "autoregressively using nucleus sampling with",
+      "annotationComment": "[Q2] Which decoding method gives the reported results?",
+      "annotationColor": "#2ea8e5",
+      "annotationPageLabel": "5",
+      "annotationSortIndex": "00004|000644|00630",
+      "annotationPosition": {
+        "pageIndex": 4,
+        "rects": [
+          [
+            355.999,
+            151.897,
+            541.443,
+            161.959
+          ]
+        ]
+      }
+    },
+    {
+      "tag": "Q3",
+      "evidenceType": "question",
+      "section": "4.3 Figure 4",
+      "pageNumber": 7,
+      "ambiguous": false,
+      "annotationType": "highlight",
+      "annotationText": "naive VQ-VAE exhibits severe collapse with only 7 active codes.",
+      "annotationComment": "[Q3] Which suite and which training step? Is this true with 1024 codes or dead-code reset?",
+      "annotationColor": "#2ea8e5",
+      "annotationPageLabel": "7",
+      "annotationSortIndex": "00006|000184|00380",
+      "annotationPosition": {
+        "pageIndex": 6,
+        "rects": [
+          [
+            149.008,
+            402.211,
+            289.436,
+            411.146
+          ],
+          [
+            55.118,
+            391.264,
+            142.693,
+            400.15
+          ]
+        ]
+      }
+    },
+    {
+      "tag": "Q4",
+      "evidenceType": "question",
+      "section": "Appendix C.3 Skill Quantization Loss",
+      "pageNumber": 18,
+      "ambiguous": false,
+      "annotationType": "highlight",
+      "annotationText": "as a direct indicator of how well the codebook captures the underlying skill space.",
+      "annotationComment": "[Q4] Does lower quantization loss explain the policy gain?",
+      "annotationColor": "#2ea8e5",
+      "annotationPageLabel": "18",
+      "annotationSortIndex": "00017|000115|00206",
+      "annotationPosition": {
+        "pageIndex": 17,
+        "rects": [
+          [
+            262.448,
+            575.14,
+            541.436,
+            585.082
+          ],
+          [
+            55.44,
+            563.18,
+            99.714,
+            573.143
+          ]
+        ]
+      }
+    },
+    {
+      "tag": "Q5",
+      "evidenceType": "question",
+      "section": "4.5 STAR on Real-World Robots",
+      "pageNumber": 8,
+      "ambiguous": false,
+      "annotationType": "highlight",
+      "annotationText": "the degradation of STAR is notably less severe than the baselines.",
+      "annotationComment": "[Q5] STAR falls from 6 to 3 and VQ-BeT from 4 to 1; is this difference real?",
+      "annotationColor": "#2ea8e5",
+      "annotationPageLabel": "8",
+      "annotationSortIndex": "00007|000294|00443",
+      "annotationPosition": {
+        "pageIndex": 7,
+        "rects": [
+          [
+            426.791,
+            338.098,
+            541.437,
+            348.16
+          ],
+          [
+            307.44,
+            326.167,
+            458.114,
+            336.13
+          ]
+        ]
+      }
+    }
+  ]
+}

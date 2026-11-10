@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8"/>
+  <title>Review with Claude: progress</title>
+  <style>
+    body { font: 13px -apple-system, sans-serif; margin: 0; display: flex; flex-direction: column; height: 100vh; background: #fff; color: #222; }
+    @media (prefers-color-scheme: dark) { body { background: #1e1e1e; color: #ddd; } #log { background: #111; } }
+    header { padding: 12px 14px; border-bottom: 1px solid #8884; }
+    #title { font-weight: 600; font-size: 14px; }
+    #status { margin-top: 4px; }
+    progress { width: 100%; margin-top: 8px; }
+    #log { flex: 1; overflow: auto; margin: 0; padding: 10px 14px; font: 12px ui-monospace, Menlo, monospace; white-space: pre-wrap; background: #f6f6f6; }
+    .tool { color: #0a6; } .text { color: inherit; } .file { color: #07c; font-weight: 600; } .err { color: #c22; }
+    footer { padding: 8px 14px; border-top: 1px solid #8884; text-align: right; }
+    button { font: inherit; padding: 3px 14px; }
+  </style>
+</head>
+<body>
+  <header>
+    <div id="title">Review with Claude</div>
+    <div id="status">Starting</div>
+    <progress id="bar" max="100" value="0"></progress>
+  </header>
+  <pre id="log"></pre>
+  <footer><button id="cancel">Cancel run</button> <button id="close">Close</button></footer>
+  <script src="progress.js"></script>
+</body>
+</html>

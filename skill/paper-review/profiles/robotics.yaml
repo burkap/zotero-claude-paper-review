@@ -1,0 +1,36 @@
+# Example domain profile: robot learning. It extends the generic default and only
+# adds or overrides what is specific to robotics. Everything else comes from default.yaml.
+extends: default.yaml
+name: robotics
+description: Robot learning papers (manipulation, imitation learning, VLA models, skill learning)
+
+checks:                      # merged by id: same id overrides, new id is added
+  - id: statistics
+    title: Statistics, trials, seeds and variance
+    ask: >
+      How many seeds, simulation episodes and real-world trials? Is variance (std, CI)
+      given for every table and figure? Is a claimed gain bigger than the variance? Is
+      a small real-world trial count (for example 10) used for strong claims?
+  - id: baselines
+    title: Baseline fairness (re-run or copied)
+    ask: >
+      Were baselines re-run with the same data, encoders and tuning budget, or are
+      numbers copied from other papers (for example Octo, OpenVLA)? Do baselines differ
+      in model size, codebook or token size, pre-training data, action chunk length, or
+      decoding method?
+  - id: data_budget
+    title: Data budget
+    ask: >
+      How many demonstrations per task, in simulation and on the real robot? Are they
+      scripted or human? Do all methods use the same demonstrations? Do pre-trained
+      models get more data than the proposed method?
+  - id: contradictions
+    title: Main text against appendix contradictions
+    ask: >
+      Look for conflicts: frozen against trained encoders, sampling against beam
+      search, described against used architecture, sizes, epochs, baseline definitions.
+  - id: sim_vs_real
+    title: Simulation against real robot
+    ask: >
+      Do the real-world tasks, trials and baselines support the simulation claims?
+      Is the real-world setup (robot, cameras, resets, success rule) clear?

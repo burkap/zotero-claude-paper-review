@@ -1,0 +1,38 @@
+# Example profile: computer vision and image/video generation papers.
+extends: default.yaml
+name: computer-vision
+description: Computer vision papers (recognition, detection, segmentation, generation)
+
+checks:
+  - id: baselines
+    title: Baseline fairness (backbone, resolution, schedule)
+    ask: >
+      Do the baselines use the same backbone, input resolution, pre-training data,
+      augmentation and training schedule? Are baseline numbers re-run or copied?
+  - id: data_budget
+    title: Datasets and splits
+    ask: >
+      Which datasets and splits are used? Are the test sets used for tuning or for
+      model selection? Are there train/test overlaps or duplicate images? Are
+      pre-training datasets larger than those of the baselines?
+  - id: metrics
+    title: Metrics and protocol
+    ask: >
+      Are the metrics standard and computed in the standard way (for example single-scale
+      or multi-scale test, test-time augmentation, FID with the same feature extractor)?
+      Is a gain in a metric also visible in the images?
+  - id: qualitative
+    title: Qualitative results
+    ask: >
+      Are the qualitative examples chosen at random or selected? Are failure cases
+      shown? Do the figures support the text claims?
+  - id: robustness
+    title: Robustness and generalization
+    ask: >
+      Is the method tested under distribution shift, other domains, other image sizes
+      or noise? Does it work on data it was not tuned for?
+  - id: compute
+    title: Compute and speed
+    ask: >
+      What do parameters, FLOPs, latency and training time look like compared with the
+      baselines? Is the gain a result of a bigger model?

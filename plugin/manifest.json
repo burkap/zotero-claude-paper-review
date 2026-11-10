@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "Review with Claude",
+  "version": "0.4.0",
+  "description": "Right-click a paper, run Claude Code (your Claude subscription) on the PDF, and get highlight annotations and a review note back.",
+  "author": "Review with Claude contributors",
+  "icons": {
+    "48": "icon.svg",
+    "96": "icon.svg"
+  },
+  "applications": {
+    "zotero": {
+      "id": "review-with-claude@itu2026.local",
+      "strict_min_version": "7.0",
+      "strict_max_version": "10.0.*",
+      "update_url": "https://example.invalid/review-with-claude/updates.json"
+    }
+  }
+}

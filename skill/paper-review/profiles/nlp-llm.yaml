@@ -1,0 +1,39 @@
+# Example profile: NLP and large language model papers.
+# It extends the generic default and adds checks that matter for LLM work.
+extends: default.yaml
+name: nlp-llm
+description: NLP and LLM papers (benchmarks, prompting, fine-tuning, evaluation)
+
+checks:
+  - id: baselines
+    title: Baseline fairness (prompts, models, budgets)
+    ask: >
+      Were baselines run with equally good prompts, the same model size, the same
+      decoding settings and the same compute or token budget? Are numbers copied from
+      other papers or from leaderboards that use a different setup?
+  - id: contamination
+    title: Data contamination and leakage
+    ask: >
+      Could the test data be in the pre-training or fine-tuning data of the models?
+      Does the paper test this (n-gram overlap, held-out or newer data, canary strings)?
+  - id: evaluation
+    title: Evaluation method
+    ask: >
+      Which metrics are used? Is an LLM used as a judge, and was the judge checked
+      against humans? How many human raters, and what is their agreement? Are the
+      prompts and the answer-extraction rules given? Is the benchmark saturated or noisy?
+  - id: sensitivity
+    title: Prompt and decoding sensitivity
+    ask: >
+      Does the result hold for other prompts, other seeds and other temperatures? Is
+      the gain larger than the change that a simple prompt edit gives?
+  - id: scaling
+    title: Model size and generality
+    ask: >
+      Is the method tested on more than one model family and size? Do the claims go
+      beyond the models and languages that were tested?
+  - id: cost
+    title: Cost and efficiency
+    ask: >
+      What do training, inference and data cost compared with the baselines? Is a
+      gain only the result of more compute or more tokens?

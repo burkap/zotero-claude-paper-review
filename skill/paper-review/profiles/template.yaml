@@ -1,0 +1,26 @@
+# Template for a new profile. Copy to profiles/<field>.yaml, rename, edit.
+# Only list what differs from the generic default. Remove what you do not need.
+extends: default.yaml
+name: my-field
+description: Short description shown in the Zotero profile picker
+
+# language:
+#   style: ASD-STE100      # or: "plain English", "formal academic English", ...
+
+# Change colors or tag letters:
+# colors:
+#   weakness: {hex: "#f19837", name: orange, use: "weakness or problem"}
+# tag_prefix:
+#   weakness: X
+
+# Replace a section title or add sections (lists replace, so give the whole list):
+# sections: [...]
+
+# Add or override checks (merged by id). Drop default checks with remove_checks.
+# remove_checks: [data_budget]
+checks:
+  - id: my_check
+    title: A check that matters in my field
+    ask: >
+      What the reviewer must look for, in plain words. Claude does this check
+      on every paper.

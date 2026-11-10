@@ -1,0 +1,11 @@
+pref("extensions.claude-review.claudePath", "");
+pref("extensions.claude-review.skillDir", "");
+pref("extensions.claude-review.profilePath", "");
+pref("extensions.claude-review.pythonDir", "");
+pref("extensions.claude-review.extraPath", "");
+pref("extensions.claude-review.model", "default");
+pref("extensions.claude-review.modelCustom", "");
+pref("extensions.claude-review.timeoutSec", 1200);
+pref("extensions.claude-review.maxTurns", 80);
+pref("extensions.claude-review.attachPdf", false);
+pref("extensions.claude-review.liveLog", true);

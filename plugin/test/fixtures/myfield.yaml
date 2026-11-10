@@ -1,0 +1,37 @@
+# Test fixture: a course-style profile that extends robotics.yaml (not shipped as an example).
+extends: robotics.yaml
+name: myfield
+description: Test profile (6 sections, robot learning checks, natural English)
+
+language:
+  style: natural academic English
+  quotes: verbatim
+
+sections:
+  - id: summary
+    title: Summary of contribution
+    guidance: Main points, ideas and claims; how the methods are evaluated and where.
+  - id: strengths
+    title: Strengths
+    guidance: Each strength has at least one green [S#] evidence tag.
+  - id: weaknesses
+    title: Weaknesses
+    guidance: >
+      Each weakness has at least one red [W#] evidence tag. End each weakness with
+      "How to improve:" and one specific fix.
+  - id: improvements
+    title: Suggested improvements
+    guidance: One point per weakness, in the same order, citing its [W#] tag.
+  - id: detailed
+    title: Detailed comments
+    guidance: One ### sub-heading per check. Add blue [Q#] questions.
+  - id: award
+    title: Would you nominate this paper for the Best Paper Award? (Yes/No)
+    starts_with: ["Yes", "No"]
+    guidance: Start with "Yes" or "No", then give the reasons with evidence tags.
+
+checks:
+  - id: improvements
+    title: What can be improved
+    ask: >
+      For each weakness, which one experiment, analysis or text change would fix it?
